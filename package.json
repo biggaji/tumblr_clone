@@ -1,0 +1,33 @@
+{
+  "name": "tumblr_clone",
+  "version": "1.0.0",
+  "description": "A clone of the tumbrl homepage",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/biggaji/tumblr_clone.git"
+  },
+  "author": "Tobi Ajibade",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/biggaji/tumblr_clone/issues"
+  },
+  "homepage": "https://github.com/biggaji/tumblr_clone#readme",
+  "dependencies": {
+    "cookie-parser": "^1.4.5",
+    "csurf": "^1.11.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "pg": "^8.5.1"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^8.2.1"
+  }
+}

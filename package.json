@@ -4,8 +4,9 @@
   "description": "A clone of the tumbrl homepage",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon app.js"
+    "test": "mocha||true",
+    "dev": "nodemon app.js",
+    "build": "node app.js"
   },
   "repository": {
     "type": "git",
@@ -18,11 +19,15 @@
   },
   "homepage": "https://github.com/biggaji/tumblr_clone#readme",
   "dependencies": {
+    "connect-flash": "0.1.1",
     "cookie-parser": "^1.4.5",
+    "cors": "2.8.5",
     "csurf": "^1.11.0",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "express-handlebars": "^5.2.0",
+    "express-session": "1.17.1",
+    "graphql": "15.5.0",
     "jsonwebtoken": "^8.5.1",
     "pg": "^8.5.1"
   },

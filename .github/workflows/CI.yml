@@ -1,0 +1,20 @@
+name: CI
+
+on: 
+  pull-request:
+    branches: 
+      - main
+
+jobs:
+  build & test:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Deploy to heroku
+      uses: akhileshns/heroku-deploy@v3.8.8
+      with:
+        heroku_api_key: ${{secrets.HEROKU_API_KEY}}
+        heroku_app_name: ${{secrets.HEROKU_APP_NAME}}
+        heroku_email: "herityjohnny14@gmail.com"

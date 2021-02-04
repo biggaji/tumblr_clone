@@ -2,9 +2,11 @@ const express = require("express");
 const exphbs = require("express-handlebars");
 const path = require("path");
 const indexRouter = require("../src/routes/index_router/index");
+const cors = require("cors");
 
 const app = express();
 
+app.use(cors());
 // static files config
 app.use(express.static(path.join(__dirname, "static")));
 

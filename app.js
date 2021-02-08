@@ -1,7 +1,7 @@
 const express = require("express");
 const exphbs = require("express-handlebars");
 const path = require("path");
-const indexRouter = require("../src/routes/index_router/index");
+const indexRouter = require("./src/routes/index_router/index");
 const cors = require("cors");
 
 const app = express();
@@ -14,7 +14,7 @@ app.engine("hbs", exphbs({ defaultLayout: "main" }));
 
 // layout engine
 app.set("view engine", "handlebars");
-app.set("views", path.join(__dirname, "views"));
+app.set("views", path.join(__dirname, "src/views"));
 
 
 app.use("/", indexRouter);
